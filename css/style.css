@@ -3,32 +3,77 @@ body {
   font: 'Roboto';
 }
 
-.title {
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.tall {
+  position: relative;
+  margin: 0 auto;
+}
+
+.tall img {
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
+  /* background-position: center center !important; */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.spread-text {
+  height: 100%;
+  width: 100%;
+  top: 150;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  /* You can also do this one */
+  /* justify-content: space-between; */
+}
+
+.spread-text p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(204, 204, 204, 0.4);
+  width: 100%;
+  padding: 1em;
+}
+
+/* .title {
   font-size: 85px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
+  /* /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-top: auto;
+  top: 20%;
+  position: absolute;
+  display: flex;
   margin-bottom: auto;
   line-height: 1.125;
-  position: relative;
-  background-color: #42a4db;
-}
+  position: relative; */
+/* } */
 
 .subtitle {
   text-align: center !important;
   justify-content: center;
   position: absolute;
-  display: flex;
+  /* display: flex; */
+  /* margin-left: auto;
+  margin-right: auto; */
   left: 18%;
   right: 18%;
   margin-bottom: auto;
-  top: 60%;
-  color: #ffffff;
-  font-size: 35px;
-  background-color: #42a4db;
+  top: 3%;
+  color: #333333;
+  font-size: 40px;
+  font-weight: bold;
+  background: #ffffff
 }
 
 .first-letter {
@@ -37,21 +82,12 @@ body {
   float: left;
 }
 
-.sticky-thing > .ai2html-container-mobile {
-  display: none;
-}
-
-.sticky-thing > .ai2html-container-medium {
-  display: none;
-}
-
-#scrolly {
-  position: relative;
-  padding: 1rem;
+.debt {
+  border-bottom: 5px solid #ffa600;
 }
 
 .bg-image {
-  background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-for-top.png');
+  background-image: url('https://pmagtulis.github.io/sona-story/assets/banner.png');
 }
 
 .footer_image {
@@ -61,45 +97,6 @@ body {
 
 .elite {
   border-bottom: 4px solid #efc267;
-}
-
-.scrolly-overlay {
-  position: relative;
-  padding: 0;
-  max-width: 35rem;
-  margin: 0 auto;
-}
-
-.sticky-thing {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  z-index: 0;
-  top: 0;
-  height: 100vh;
-  /* Center everything inside */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.step {
-  margin: 0 auto 2rem auto;
-  margin-bottom: 25rem;
-  -webkit-transform: translate3d(0, 0, 0);
-  z-index: 999;
-  background-color: #eee;
-  background-color: #fff;
-  color: black;
-}
-
-.step p {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.25rem;
 }
 
 .hidden {
@@ -117,85 +114,24 @@ body {
 /* When it's less than 500 pixels wide, do normal scrollytelling */
 
 @media only screen and (max-width: 700px) and (min-width: 510px) {
-  .sticky-thing:first-child {
-    display: none;
-    height: 0px;
-  }
-
-  .sticky-thing > .ai2html-container-medium {
-    display: block;
-  }
-
-  #scrolly.side-by-side {
-    display: flex;
-  }
-
-  #scrolly.side-by-side > div {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 0.75em;
-  }
-
-  #scrolly.side-by-side .scrolly-overlay {
-    margin-top: 70vh;
-    order: 0;
-    /* Change these to adjust sizing options */
-    min-width: 15rem;
-    max-width: 20rem;
-  }
+  
 
   .footer_image {
     background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_md.png');
     height: 20px;
   }
 
-  #scrolly.side-by-side .sticky-thing {
-    order: 1;
-    flex-grow: 2;
-  }
+  
 }
 
 /* When it's less than 500 pixels wide, do normal scrollytelling */
 
 @media only screen and (max-width: 500px) and (min-width: 300px) {
-  #scrolly.side-by-side {
-    display: flex;
-  }
-
-  #scrolly.side-by-side > div {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 0.75em;
-  }
-
-  #scrolly.side-by-side .scrolly-overlay {
-    margin-top: 70vh;
-    order: 0;
-    /* Change these to adjust sizing options */
-    min-width: 15rem;
-    max-width: 20rem;
-  }
-
-  #scrolly.side-by-side .sticky-thing {
-    order: 1;
-    flex-grow: 2;
-  }
 
   #footer_img {
     padding: 0 0 0 0px;
     margin: 0;
     width: 100%;
-  }
-
-  .sticky-thing:nth-child(-n + 2) {
-    display: none;
-    height: 0px;
-  }
-
-  .sticky-thing > .ai2html-container-mobile {
-    display: block;
   }
 
   .title {
