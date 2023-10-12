@@ -1,0 +1,248 @@
+html,
+body {
+  font: 'Roboto';
+}
+
+.title {
+  font-size: 85px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 1.125;
+  position: relative;
+  background-color: #42a4db;
+}
+
+.subtitle {
+  text-align: center !important;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  left: 18%;
+  right: 18%;
+  margin-bottom: auto;
+  top: 60%;
+  color: #ffffff;
+  font-size: 35px;
+  background-color: #42a4db;
+}
+
+.first-letter {
+  font-size: 55px;
+  line-height: 55px;
+  float: left;
+}
+
+.sticky-thing > .ai2html-container-mobile {
+  display: none;
+}
+
+.sticky-thing > .ai2html-container-medium {
+  display: none;
+}
+
+#scrolly {
+  position: relative;
+  padding: 1rem;
+}
+
+.bg-image {
+  background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-for-top.png');
+}
+
+.footer_image {
+  background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_xl.png');
+  height: 30px;
+}
+
+.elite {
+  border-bottom: 4px solid #efc267;
+}
+
+.scrolly-overlay {
+  position: relative;
+  padding: 0;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+.sticky-thing {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 0;
+  height: 100vh;
+  /* Center everything inside */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  margin-bottom: 25rem;
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 999;
+  background-color: #eee;
+  background-color: #fff;
+  color: black;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.footer_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-right: 44%;
+  margin-left: 44%;
+}
+
+/* When it's less than 500 pixels wide, do normal scrollytelling */
+
+@media only screen and (max-width: 700px) and (min-width: 510px) {
+  .sticky-thing:first-child {
+    display: none;
+    height: 0px;
+  }
+
+  .sticky-thing > .ai2html-container-medium {
+    display: block;
+  }
+
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    margin-top: 70vh;
+    order: 0;
+    /* Change these to adjust sizing options */
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  .footer_image {
+    background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_md.png');
+    height: 20px;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+}
+
+/* When it's less than 500 pixels wide, do normal scrollytelling */
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    margin-top: 70vh;
+    order: 0;
+    /* Change these to adjust sizing options */
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+
+  #footer_img {
+    padding: 0 0 0 0px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .sticky-thing:nth-child(-n + 2) {
+    display: none;
+    height: 0px;
+  }
+
+  .sticky-thing > .ai2html-container-mobile {
+    display: block;
+  }
+
+  .title {
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1.125;
+    position: relative;
+  }
+
+  .subtitle {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 60%;
+    left: 3%;
+    right: 3%;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #42a4db;
+  }
+
+  .elite {
+    border-bottom: 3px solid #efc267;
+  }
+
+  .bg-image {
+    background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
+    height: 300px;
+  }
+
+  .footer_image {
+    background-image: url('https://pmagtulis.github.io/sona-story/assets/footer-xs.png');
+    height: 15px;
+  }
+
+  .footer_container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+}
