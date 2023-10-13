@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+.tall-mobile {
+  display: none;
+}
+
 .tall img {
   margin: 0 auto;
   display: block;
@@ -43,23 +47,7 @@ body {
   padding: 1em;
 }
 
-/* .title {
-  font-size: 85px;
-  color: #000000;
-  text-align: center;
-  font-weight: bold;
-  /* /* margin-left: auto;
-  margin-right: auto; */
-  /* margin-top: auto;
-  top: 20%;
-  position: absolute;
-  display: flex;
-  margin-bottom: auto;
-  line-height: 1.125;
-  position: relative; */
-/* } */
-
-.subtitle {
+.title {
   text-align: center !important;
   justify-content: center;
   position: absolute;
@@ -73,6 +61,22 @@ body {
   color: #333333;
   font-size: 40px;
   font-weight: bold;
+  background: #ffffff
+}
+
+.byline {
+  text-align: center !important;
+  justify-content: center;
+  position: absolute;
+  /* display: flex; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  left: 18%;
+  right: 18%;
+  margin-bottom: auto;
+  top: 4%;
+  color: #333333;
+  font-size: 20px;
   background: #ffffff
 }
 
@@ -134,53 +138,80 @@ body {
 
 /* When it's less than 500 pixels wide, do normal scrollytelling */
 
-@media only screen and (max-width: 500px) and (min-width: 300px) {
-
-  #footer_img {
-    padding: 0 0 0 0px;
-    margin: 0;
-    width: 100%;
-  }
+@media only screen and (max-width: 470px) and (min-width: 300px) {
 
   .title {
-    font-size: 38px;
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 1.125;
-    position: relative;
-  }
-
-  .subtitle {
-    text-align: center;
+    text-align: center !important;
     justify-content: center;
     position: absolute;
+    /* margin-left: auto;
+    margin-right: auto; */
+    left: 18%;
+    right: 18%;
+    /* margin-bottom: auto; */
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffffff
+  }
+
+  .debt {
+    border-bottom: 3px solid #ffa600;
+  }
+
+  .tall-mobile {
+    position: relative;
+    display: block;
     margin: 0 auto;
-    top: 60%;
-    left: 3%;
-    right: 3%;
-    color: #ffffff;
-    font-size: 20px;
-    background-color: #42a4db;
+  }
+  
+  .tall {
+    display: none;
   }
 
-  .elite {
-    border-bottom: 3px solid #efc267;
+  .spread-text {
+    display: none;
+  }
+  
+  .tall-mobile img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    /* background-position: center center !important; */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+  }
+  
+  .spread-text-mobile {
+    height: 100%;
+    width: 100%;
+    top: 70;
+    left: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    /* You can also do this one */
+    /* justify-content: space-between; */
   }
 
-  .bg-image {
-    background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
-    height: 300px;
+  .spread-text-mobile, p:nth-child(2) {
+    top:200;
   }
 
-  .footer_image {
-    background-image: url('https://pmagtulis.github.io/sona-story/assets/footer-xs.png');
-    height: 15px;
+  /* .spread-text-mobile, p:nth-child(3) {
+    top:-20;
+  } */
+  
+  .spread-text-mobile p {
+    font-size: 16px;
+    max-width: 300px;
+    margin: 0 auto;
+    background: rgba(204, 204, 204, 0.4);
+    width: 100%;
+    padding: 1em;
   }
+  
 
   .footer_container {
     position: absolute;
