@@ -20,9 +20,6 @@ body {
   margin: 0 auto;
   display: block;
   max-width: 90%;
-  /* background-position: center center !important; */
-  /* background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 .spread-text {
@@ -34,8 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content:space-around;
-  /* You can also do this one */
-  /* justify-content: space-between; */
 }
 
 .spread-text p {
