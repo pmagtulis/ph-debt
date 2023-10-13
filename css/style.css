@@ -78,6 +78,10 @@ body {
   float: left;
 }
 
+.caption {
+  font-size: 11px;
+}
+
 .debt {
   border-bottom: 5px solid #ffa600;
 }
