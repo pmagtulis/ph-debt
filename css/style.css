@@ -128,7 +128,7 @@ body {
 
 /* When it's less than 500 pixels wide, do normal scrollytelling */
 
-@media only screen and (max-width: 470px) and (min-width: 300px) {
+@media only screen and (max-width: 500px) and (min-width: 300px) {
 
   .title {
     text-align: center !important;
@@ -150,7 +150,7 @@ body {
     justify-content: center;
     position:absolute;
     color: #212529;
-    font-size: 18px;
+    font-size: 16px;
     background: #ffffff
   }
 
