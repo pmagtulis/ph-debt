@@ -51,9 +51,6 @@ body {
   text-align: center !important;
   justify-content: center;
   position: absolute;
-  /* display: flex; */
-  /* margin-left: auto;
-  margin-right: auto; */
   left: 18%;
   right: 18%;
   margin-bottom: auto;
@@ -127,12 +124,6 @@ body {
 
 @media only screen and (max-width: 700px) and (min-width: 510px) {
   
-
-  .footer_image {
-    background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_md.png');
-    height: 20px;
-  }
-
   
 }
 
@@ -143,16 +134,30 @@ body {
   .title {
     text-align: center !important;
     justify-content: center;
-    position: absolute;
-    /* margin-left: auto;
-    margin-right: auto; */
-    left: 18%;
-    right: 18%;
-    /* margin-bottom: auto; */
-    color: #333333;
-    font-size: 18px;
+    position:absolute;
+    color: #212529;
+    font-size: 22px;
     font-weight: bold;
     background: #ffffff
+  }
+
+  .tall-mobile .title {
+    top: 300;
+    left:23%
+  }
+
+  .byline {
+    text-align: center !important;
+    justify-content: center;
+    position:absolute;
+    color: #212529;
+    font-size: 18px;
+    background: #ffffff
+  }
+
+  .tall-mobile .byline {
+    top: 430;
+    left:23%
   }
 
   .debt {
@@ -185,12 +190,11 @@ body {
   .spread-text-mobile {
     height: 100%;
     width: 100%;
-    top: 70;
     left: 10;
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-evenly;
     /* You can also do this one */
     /* justify-content: space-between; */
   }
@@ -198,10 +202,6 @@ body {
   .spread-text-mobile, p:nth-child(2) {
     top:200;
   }
-
-  /* .spread-text-mobile, p:nth-child(3) {
-    top:-20;
-  } */
   
   .spread-text-mobile p {
     font-size: 16px;
