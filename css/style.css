@@ -86,6 +86,14 @@ body {
   border-bottom: 5px solid #ffa600;
 }
 
+.local {
+  border-bottom: 3px solid #bc1980;
+}
+
+.foreign {
+  border-bottom: 3px solid #ffa600;
+}
+
 .bg-image {
   background-image: url('https://pmagtulis.github.io/sona-story/assets/banner.png');
 }
