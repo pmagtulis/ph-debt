@@ -94,17 +94,9 @@ body {
   border-bottom: 3px solid #ffa600;
 }
 
-.bg-image {
-  background-image: url('https://pmagtulis.github.io/sona-story/assets/banner.png');
-}
-
 .footer_image {
   background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_xl.png');
   height: 30px;
-}
-
-.elite {
-  border-bottom: 4px solid #efc267;
 }
 
 .hidden {
@@ -119,14 +111,14 @@ body {
   margin-left: 44%;
 }
 
-/* When it's less than 500 pixels wide, do normal scrollytelling */
+/* When it's less than 500 pixels wide */
 
 @media only screen and (max-width: 700px) and (min-width: 510px) {
   
   
 }
 
-/* When it's less than 500 pixels wide, do normal scrollytelling */
+/* When it's less than 500 pixels wide */
 
 @media only screen and (max-width: 500px) and (min-width: 300px) {
 
@@ -181,9 +173,6 @@ body {
     margin: 0 auto;
     display: block;
     max-width: 100%;
-    /* background-position: center center !important; */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
   }
   
   .spread-text-mobile {
