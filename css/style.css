@@ -3,6 +3,23 @@ body {
   font: 'Roboto';
 }
 
+.scroll-watcher {
+  height: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #999999;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {scale: 1 1;}
+}
+
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -18,7 +35,7 @@ body {
 
 .tall img {
   margin: 0 auto;
-  display: block;
+  display:block;
   max-width: 90%;
 }
 
@@ -109,12 +126,6 @@ body {
   justify-content: center;
   margin-right: 44%;
   margin-left: 44%;
-}
-
-/* When it's less than 500 pixels wide */
-
-@media only screen and (max-width: 700px) and (min-width: 510px) {
-  
 }
 
 /* When it's less than 500 pixels wide */
