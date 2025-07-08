@@ -51,13 +51,23 @@ body {
 }
 
 .spread-text p {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 2em;
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(204, 204, 204, 0.4);
+  background: rgba(255,255,255, 0.9);
   width: 100%;
   padding: 1em;
 }
+
+ .spread-text, p:nth-child(2) {
+    top:170;
+  }
+
+  .spread-text, p:last-child {
+    background: none;
+  }
+  
 
 a {
   color:#212529
@@ -209,8 +219,8 @@ a {
     /* justify-content: space-between; */
   }
 
-  .spread-text-mobile, p:nth-child(2) {
-    top:200;
+  .spread-text-mobile, p:nth-child(3) {
+    top:270;
   }
   
   .spread-text-mobile p {
@@ -218,9 +228,13 @@ a {
     max-width: 300px;
     text-align:left;
     margin: 0 auto;
-    background: rgba(204, 204, 204, 0.4);
+    background: rgba(255, 255, 255, 0.9);
     width: 100%;
     padding: 1em;
+  }
+
+    .spread-text-mobile, p:last-child {
+    background: none;
   }
   
 
