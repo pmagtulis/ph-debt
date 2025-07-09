@@ -17,7 +17,9 @@ body {
 }
 
 @keyframes scroll-watcher {
-  to {scale: 1 1;}
+  to {
+    scale: 1 1;
+  }
 }
 
 .container {
@@ -35,7 +37,7 @@ body {
 
 .tall img {
   margin: 0 auto;
-  display:block;
+  display: block;
   max-width: 90%;
 }
 
@@ -47,7 +49,7 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .spread-text p {
@@ -55,22 +57,22 @@ body {
   line-height: 2em;
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(255,255,255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   padding: 1em;
 }
 
- .spread-text, p:nth-child(2) {
-    top:170;
-  }
+.spread-text p:nth-child(2) {
+  margin-bottom: 170px;
+}
 
-  .spread-text, p:last-child {
-    background: none;
-  }
-  
+.spread-text p:last-child {
+  background: none;
+  margin-bottom: 70px;
+}
 
 a {
-  color:#212529
+  color: #212529;
 }
 
 .title {
@@ -84,7 +86,7 @@ a {
   color: #333333;
   font-size: 40px;
   font-weight: bold;
-  background: #ffffff
+  background: #ffffff;
 }
 
 .byline {
@@ -100,7 +102,7 @@ a {
   top: 4%;
   color: #333333;
   font-size: 20px;
-  background: #ffffff
+  background: #ffffff;
 }
 
 .first-letter {
@@ -145,29 +147,28 @@ a {
 /* When it's less than 500 pixels wide */
 
 @media only screen and (max-width: 500px) and (min-width: 300px) {
-
   .title {
     text-align: center !important;
     justify-content: center;
-    position:absolute;
+    position: absolute;
     color: #212529;
     font-size: 22px;
     font-weight: bold;
-    background: #ffffff
+    background: #ffffff;
   }
 
   .tall-mobile .title {
     top: 250;
-    left:23%
+    left: 23%;
   }
 
   .byline {
     text-align: center !important;
     justify-content: center;
-    position:absolute;
+    position: absolute;
     color: #212529;
     font-size: 16px;
-    background: #ffffff
+    background: #ffffff;
   }
 
   .first-letter {
@@ -179,7 +180,7 @@ a {
 
   .tall-mobile .byline {
     top: 380;
-    left:23%
+    left: 23%;
   }
 
   .debt {
@@ -191,7 +192,7 @@ a {
     display: block;
     margin: 0 auto;
   }
-  
+
   .tall {
     display: none;
   }
@@ -199,44 +200,49 @@ a {
   .spread-text {
     display: none;
   }
-  
+
   .tall-mobile img {
     margin: 0 auto;
     display: block;
     max-width: 100%;
   }
-  
+
   .spread-text-mobile {
     height: 100%;
     width: 100%;
-    left: 20;
-    top:10;
+    left: 20px;
+    top: 10px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     /* You can also do this one */
     /* justify-content: space-between; */
   }
 
-  .spread-text-mobile, p:nth-child(3) {
-    top:270;
-  }
-  
   .spread-text-mobile p {
     font-size: 16px;
     max-width: 300px;
-    text-align:left;
+    text-align: left;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
     padding: 1em;
   }
 
-    .spread-text-mobile, p:last-child {
-    background: none;
+  .spread-text-mobile p:nth-child(3) {
+    margin-top: 10px;
   }
-  
+
+  .spread-text-mobile p:nth-child(1) {
+    margin-top: 300px;
+  }
+
+  .spread-text-mobile,
+  p:last-child {
+    background: none;
+    margin-bottom: 100px;
+  }
 
   .footer_container {
     position: absolute;
@@ -246,7 +252,8 @@ a {
     margin-left: 25%;
   }
 
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 }
